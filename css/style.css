@@ -98,10 +98,13 @@ a {
   padding-left: 100px;
   padding-right: 100px;
 }
-
+.carrousel img{
+  width: 130px;
+  height: 180px;
+}
 #carrousel_destacada_0_texto {
   text-align: center;
-  font-size: small;
+  font-size: 15px;
 }
 #carrousel_destacada_1_texto {
   text-align: center;
@@ -109,7 +112,7 @@ a {
 }
 #carrousel_destacada_2_texto {
   text-align: center;
-  font-size: larger;
+  font-size: 15px;
 }
 #carrousel_destacada_3_texto {
   text-align: center;
@@ -117,7 +120,7 @@ a {
 }
 #carrousel_destacada_4_texto {
   text-align: center;
-  font-size: small;
+  font-size: 15px;
 }
 
 .titulo {
