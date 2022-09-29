@@ -5,203 +5,248 @@
 
 .logowpp {
   position: fixed;
-  bottom: 40px;
-  right: 40px;
+  bottom: 20px;
+  right: 20px;
 }
-
-.main_header_titulo {
-  color: rgb(77, 71, 71);
-  font-size: 33px;
-  justify-content: start;
-}
-
-.main_header {
-  background-color: #e7dcd9;
-  position: fixed;
-  width: 100vw;
-  height: 50px;
-  display: grid;
-  grid-template-columns: 100px 950px;
-  justify-content: space-around;
-  align-items: center;
-}
-
-/* ul */
-.main_header_nav {
-  display: grid;
-  grid-template-columns: 70px 70px 170px 70px 70px;
-  font-size: 0;
-  list-style: none;
-  justify-content: end;
-  gap: 0 20px;
-}
-
-#disenar {
-  width: 150px;
-}
-
-.main_header_nav ul {
-  display: none;
-  position: absolute;
-  background-color: rgb(244, 238, 242);
-  width: 90px;
-  padding-left: 10px;
-  padding-bottom: -40px;
-}
-
-.main_header_nav ul li {
-  display: block;
-}
-
-.main_header_nav li:hover ul {
-  display: block;
-}
-.main_header_nav,
-a {
-  color: rgb(67, 60, 60);
-  font-size: 13px;
-  text-decoration: none;
+nav {
+  background-color: rgb(255, 255, 255);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .main_principal {
-  height: 800px;
-  background-image: url(../img/fondo_main_principal.svg) ;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
+  background-color: rgba(147, 90, 74, 0.785);
+  height: 400px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr 1fr;
+  border-top: 100px;
+  justify-items: center;
 }
 
-.main__segunda_capa_boton_link {
-  font-size: 20px;
+.main_principal_logo {
+  padding-top: 70px;
+  width: 200px;
+}
+.main_principal_logo img {
+  height: auto;
+  max-width: 100%;
+}
+
+.main_principal_btn_link {
+  font-size: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: rgb(67, 60, 60);
   border: 1px solid rgb(67, 60, 60);
   border-radius: 40px;
   padding: 10px 10px;
   font-weight: bold;
+  align-items: center;
+  margin-bottom: 10px;
 }
-.main_principal__segunda_capa {
-  padding-bottom: 80px;
+
+.main_principal__btn:hover {
+  transform: scale(1.2);
+  transition: 0.4s;
+}
+.main_principal_btn_link:hover {
+  color: rgb(168, 153, 153);
+  border: 1px solid rgb(168, 153, 153);
+}
+
+.carousel-inner img {
+  width: 50px;
+  height: 250px;
+}
+.carrusel_mobile {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#carouselExampleCaptions {
+  height: 250px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #section_carrousel {
-  margin: 80px 10px 70px 10px;
+  display: none;
 }
-
-.carrousel {
-  align-items: center;
-  justify-content: space-around;
-  display: flex;
-  flex-wrap: nowrap;
-  padding-left: 100px;
-  padding-right: 100px;
-}
-.carrousel img{
-  width: 130px;
-  height: 180px;
-}
-#carrousel_destacada_0_texto {
-  text-align: center;
-  font-size: 15px;
-}
-#carrousel_destacada_1_texto {
-  text-align: center;
-  font-size: 15px;
-}
-#carrousel_destacada_2_texto {
-  text-align: center;
-  font-size: 15px;
-}
-#carrousel_destacada_3_texto {
-  text-align: center;
-  font-size: 15px;
-}
-#carrousel_destacada_4_texto {
-  text-align: center;
-  font-size: 15px;
-}
-
-.titulo {
-  font-family: "Montserrat", sans-serif;
-  background-color: rgba(179, 160, 133, 0.372);
-}
-.precio {
-  font-family: "Montserrat", sans-serif;
-  font-size: 10px;
-}
-
 #accesorios {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 10px 80px 100px 80px;
-  align-items: center;
+  display: none;
 }
-.link {
-  width: 150px;
-  height: 244px;
-  padding-left: 15px;
 
-  font-weight: 100;
-  text-align: center;
-  position: absolute;
-  display: flex;
-  flex-direction: column;
+.accesorios_mobile {
+  display: grid;
+  width: 100%;
+  height: 700px;
+  grid-template-areas:
+    "imgcaravana"
+    "imgcollar "
+    "imganillo ";
+  grid-template-rows: 200px 200px 200px;
+  grid-template-columns: 100%;
+  align-items: stretch;
+  row-gap: 5px;
+  padding-top: 30px;
 }
-.link a {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 900;
-  margin-top: 122px;
-  background-color: rgba(179, 160, 133, 0.372);
+.accesorios_mobile img {
+  width: 35%;
+}
+
+.accesorios_mobile_caravanas {
+  grid-area: imgcaravana;
+  display: flex;
+  width: 100%;
+}
+
+#caravanas_texto_mobile {
+  text-align: end;
+  padding-right: 5%;
+  padding-top: 10%;
+  width: 65%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-image: url(../img/fondo-accesorios-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#caravanas_texto_mobile a {
+  color: rgb(67, 60, 60);
+  font-size: large;
+  text-decoration: none;
+}
+
+#caravanas_texto_mobile p {
+  font-size: x-small;
+}
+.accesorios_mobile_collares_pulseras {
+  grid-area: imgcollar;
+  display: flex;
+  width: 100%;
+}
+
+.collares_pulseras_mobile_texto {
+  text-align: end;
+  padding-right: 5%;
+  padding-top: 10%;
+  width: 65%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.collares_pulseras_mobile_texto a {
+  color: rgb(67, 60, 60);
+  font-size: large;
+  text-decoration: none;
+}
+
+.collares_pulseras_mobile_texto p {
+  font-size: x-small;
+}
+
+.accesorios_mobile_anillos {
+  grid-area: imganillo;
+  display: flex;
+  width: 100%;
+}
+
+.anillos_texto_mobile {
+  text-align: end;
+  padding-right: 5%;
+  padding-top: 10%;
+  width: 65%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-image: url(../img/fondo-accesorios-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.anillos_texto_mobile a {
+  color: rgb(67, 60, 60);
+  font-size: large;
+  text-decoration: none;
+}
+
+.anillos_texto_mobile p {
+  font-size: x-small;
 }
 
 .disena_tu_propio_accesorio {
-  width: 90%;
-  height: 300px;
+  width: 95%;
+  height: 200px;
   background-image: url(../img/fondo_disenar.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 50px;
+  border-radius: 30px;
   margin: 0 auto;
 }
 
 .disena_tu_propio_accesorio_texto {
   font-family: "Montserrat", sans-serif;
   text-align: center;
-  padding-top: 50px;
-}
-.disena_tu_propio_accesorio_texto h2 {
-  padding-bottom: 10px;
-  padding-top: 90px;
-  font-size: 25px;
-}
-.disena_tu_propio_accesorio_texto p {
-  font-size: 20px;
-}
-.disena_tu_propio_accesorio_texto h3 {
-  padding-top: 50px;
+  padding-top: 2%;
+  align-content: center;
+  text-decoration: none;
+  color: rgb(67, 60, 60);
 }
 
+.disena_tu_propio_accesorio_texto:hover {
+  color: rgb(168, 153, 153);
+}
+
+.disena_tu_propio_accesorio_texto h2 {
+  padding-bottom: 10px;
+  padding-top: 7%;
+  font-size: 20px;
+}
+.disena_tu_propio_accesorio_texto p {
+  font-size: 12px;
+}
+.disena_tu_propio_accesorio_texto h3 {
+  padding-top: 10px;
+  font-size: 17px;
+}
 .footer {
   background-color: rgba(179, 160, 133, 0.372);
-  margin-top: 300px;
-  height: 400px;
+  margin-top: 100px;
+  height: 200px;
+  width: 100%;
 }
 
 .footer_top {
   display: grid;
   grid-template-areas: "logo susc redes";
-  grid-template-rows: 350px;
+  grid-template-rows: 180px;
   grid-template-columns: 20% 60%;
-  gap: 0px 80px;
-  padding-top: 20px;
-  padding-left: 90px;
+  gap: 10px 50px;
+}
+
+#text-h5-mobile-footer {
+  font-size: x-small;
+}
+
+#text-h3-mobile-footer {
+  font-size: x-small;
 }
 
 .logo {
   grid-area: logo;
+  padding-left: 20%;
+  padding-top: 20%;
+}
+
+#img-logo-footer {
+  width: 100px;
+  height: auto;
 }
 
 .suscripcion {
@@ -209,15 +254,190 @@ a {
   padding-top: 20%;
   text-align: center;
   font-family: "Montserrat", sans-serif;
-  font-size: medium;
+  font-size: 8px;
 }
 
-.main_principal_shop{
-  height: 300px;
-  background-color: white;
-}
+@media screen and (min-width: 780px) {
+  .logowpp {
+    bottom: 40px;
+    right: 40px;
+  }
 
-.main_principal_log{
-  height: 100px;
-  background-color: white;
+  .main_principal {
+    height: 600px;
+    border-top: 500px;
+  }
+
+  .main_principal_logo {
+    padding-top: 90px;
+    width: 300px;
+  }
+
+  .main_principal_btn_link {
+    font-size: 17px;
+  }
+
+  .carrusel_mobile {
+    display: none;
+  }
+
+  #section_carrousel {
+    margin: 80px 10px 70px 10px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .carrousel {
+    align-items: center;
+    width: 70%;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .carrousel_destacada_0:hover {
+    transform: scale(1.3);
+    transition: 0.5s;
+  }
+
+  .carrousel__destacada_1:hover {
+    transform: scale(1.3);
+    transition: 0.5s;
+  }
+
+  .carrousel__destacada_2:hover {
+    transform: scale(1.3);
+    transition: 0.5s;
+  }
+
+  .carrousel__destacada_3:hover {
+    transform: scale(1.3);
+    transition: 0.5s;
+  }
+
+  .carrousel_destacada_4:hover {
+    transform: scale(1.3);
+    transition: 0.5s;
+  }
+
+  .carrousel img {
+    width: 130px;
+    height: 180px;
+    border-radius: 15px;
+  }
+  #carrousel_destacada_0_texto {
+    text-align: center;
+    font-size: 10px;
+    padding-top: 5px;
+  }
+  #carrousel_destacada_1_texto {
+    text-align: center;
+    font-size: 10px;
+    padding-top: 5px;
+  }
+  #carrousel_destacada_2_texto {
+    text-align: center;
+    font-size: 10px;
+    padding-top: 5px;
+  }
+  #carrousel_destacada_3_texto {
+    text-align: center;
+    font-size: 10px;
+    padding-top: 5px;
+  }
+  #carrousel_destacada_4_texto {
+    text-align: center;
+    font-size: 10px;
+    padding-top: 5px;
+  }
+
+  .titulo {
+    font-family: "Montserrat", sans-serif;
+    background-color: rgba(179, 160, 133, 0.372);
+    border-radius: 10px;
+  }
+  .precio {
+    font-family: "Montserrat", sans-serif;
+    font-size: 7px;
+  }
+
+  #accesorios {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 80px 100px 80px;
+    align-items: center;
+  }
+  #accesorios img {
+    width: 180px;
+  }
+  .link {
+    width: 150px;
+    height: 244px;
+    padding-left: 15px;
+
+    font-weight: 100;
+    text-align: center;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+  }
+  .link a {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    color: rgb(67, 60, 60);
+    font-weight: 600;
+    margin-top: 122px;
+    background-color: rgba(179, 160, 133, 0.575);
+  }
+  .accesorios_mobile {
+    display: none;
+  }
+  .disena_tu_propio_accesorio {
+    width: 90%;
+    height: 300px;
+  }
+
+  .disena_tu_propio_accesorio_texto {
+    padding-top: 50px;
+  }
+  .disena_tu_propio_accesorio_texto h2 {
+    padding-top: 90px;
+    font-size: 25px;
+  }
+  .disena_tu_propio_accesorio_texto p {
+    font-size: 20px;
+  }
+  .disena_tu_propio_accesorio_texto h3 {
+    padding-top: 50px;
+  }
+
+  .footer {
+    margin-top: 300px;
+    height: 400px;
+  }
+
+  .footer_top {
+    grid-template-rows: 350px;
+    gap: 0px 80px;
+    padding-top: 20px;
+    padding-left: 90px;
+  }
+
+  #text-h5-mobile-footer {
+    font-size: medium;
+  }
+
+  #text-h3-mobile-footer {
+    font-size: medium;
+  }
+
+  #img-logo-footer {
+    width: 200px;
+    height: auto;
+  }
+
+  .suscripcion {
+    font-size: medium;
+  }
 }
