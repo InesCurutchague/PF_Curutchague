@@ -291,7 +291,7 @@ nav {
     "paso1 paso2"
     "paso3 paso3"
     "paso4 paso4";
-  grid-template-rows: 200px 300px 300px;
+  grid-template-rows: 150px 300px 300px;
   grid-template-columns: 50% 50%;
   padding-top: 10%;
   padding-left: 5%;
@@ -527,6 +527,8 @@ nav {
 
   .section_principal_disenar {
     font-size: medium;
+    grid-template-rows: 200px 300px 300px;
+
   }
   .section_principal_disenar h5 {
     font-size: medium;
