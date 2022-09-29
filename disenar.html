@@ -18,6 +18,14 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
       rel="stylesheet"
     />
+    <!-- link css btp -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+
     <link rel="shortcut icon" href="./img/logo pagina curvado.png" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Aune | handmade</title>
@@ -28,55 +36,284 @@
       <div class="logowpp">
         <img src="./img/logowpp.png" alt="whatsapp" width="40" height="40" />
       </div>
-      <h1 class="main_header_titulo">AUNE</h1>
       <!-- Inicio barra de navegacion -->
-      <nav>
-        <ul class="main_header_nav">
-          <li>
-            <a href="./index2.html">HOME</a>
-          </li>
-          <li>
-            <a href="./shop.html">SHOP</a>
-            <ul>
-              <li><a href="#">Caravanas</a></li>
-              <li><a href="#">Collares</a></li>
-              <li><a href="#">Anillos</a></li>
-              <li><a href="#">Sale</a></li>
+      <nav class="navbar fixed-top navbar-expand-md">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">AUNE</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul
+              class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll"
+              style="--bs-scroll-height: 100px"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index2.html"
+                  >HOME</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="./shop.html"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  SHOP
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Caravanas</a></li>
+                  <li><a class="dropdown-item" href="#">Collares</a></li>
+                  <li><a class="dropdown-item" href="#">Anillos</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">SALE</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./disenar.html"
+                  >DISEÑA TU ACCESORIO</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./contacto.html"
+                  >CONTACTO</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./login.html"
+                  >LOG IN</a
+                >
+              </li>
             </ul>
-          </li>
-          <li id="disenar"><a href="./disenar.html">DISEÑA TU ACCESORIO</a></li>
-          <li><a href="./contacto.html#formulario">CONTACTO</a></li>
-          <li><a href="./login.html">LOG IN</a></li>
-        </ul>
+          </div>
+        </div>
       </nav>
-      <!-- Fin barra de navegacion -->
     </header>
+    <!--  Inicio de contenido principal -->
+<main class="main_primero">
+  <div id="main_primero_text">
+    <h3>DISEÑA TU PROPIO ACCESORIO AUNE</h3>
+    <p>Estás a un paso de crear tu accesorio perfecto</p>
+  </div>
 
-        <!-- Inicio contenido principal -->
-        <main class="main_principal_shop">
+</main>
+  
+    <section class="section_principal_disenar">
+      <div class="especie">
+        <h4>1°</h4>
+        <h5>¿Que vas a diseñar hoy?</h5>
+        <div>
+          <div class="form-check caravana">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckDefault"
+            />
+            <label class="form-check-label" for="flexCheckDefault">
+              CARAVANAS
+            </label>
+          </div>
+          <div class="form-check collar">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckChecked"
+              checked
+            />
+            <label class="form-check-label" for="flexCheckChecked">
+              COLLAR
+            </label>
+          </div>
+          <div class="form-check pulsera">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckDefault"
+            />
+            <label class="form-check-label" for="flexCheckDefault">
+              PULSERA
+            </label>
+          </div>
+          <div class="form-check anillo">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckChecked"
+              checked
+            />
+            <label class="form-check-label" for="flexCheckChecked">
+              ANILLO
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="color">
+        <h4>2°</h4>
+        <h5>Envianos el o los colores que quieras para tu accesorio</h5>
+        <form action="">
+          <input
+            type="archivos"
+            name="archivos"
+            placeholder="Adjuntar archivos"
+            disabled
+          />
+        </form>
+      </div>
+      <div class="modelo">
+        <h4>3°</h4>
+        <h5>MODELOS</h5>
+        <div class="form-floating">
+          <select
+            class="form-select"
+            id="floatingSelect"
+            aria-label="Floating label select example"
+          >
+            <option selected>Caravanas</option>
+            <option value="1">Ceres</option>
+            <option value="2">Alya</option>
+            <option value="3">Vega</option>
+            <option value="4">Minis</option>
+            <option value="5">Aurora</option>
+            <option value="6">Laila</option>
+          </select>
+          <label for="floatingSelect">MODELOS</label>
+        </div>
+        <div class="form-floating">
+          <select
+            class="form-select"
+            id="floatingSelect"
+            aria-label="Floating label select example"
+          >
+            <option selected>Collar</option>
+            <option value="1">Perla</option>
+            <option value="2">Galaxia</option>
+            <option value="3">Perla Noche</option>
+          </select>
+          <label for="floatingSelect">MODELOS</label>
+        </div>
+        <div class="form-floating">
+          <select
+            class="form-select"
+            id="floatingSelect"
+            aria-label="Floating label select example"
+          >
+            <option selected>Pulsera</option>
+            <option value="1">Mesina</option>
+            <option value="2">Odye</option>
+            <option value="3">Ofelia</option>
+          </select>
+          <label for="floatingSelect">MODELOS</label>
+        </div>
+        <div class="form-floating">
+          <select
+            class="form-select"
+            id="floatingSelect"
+            aria-label="Floating label select example"
+          >
+            <option selected>Anillos</option>
+            <option value="1">Chunky</option>
+            <option value="2">Piedra</option>
+          </select>
+          <label for="floatingSelect">MODELOS</label>
+        </div>
+      </div>
+      <div class="comentario">
+        <h4>4°</h4>
+        <h5>Comunicate con nosotros</h5>
+        <div class="row">
+          <div class="col">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Name"
+              aria-label="First name"
+            />
+          </div>
+          <div class="col">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Last Name"
+              aria-label="Last name"
+            />
+          </div>
+          <div class="input-group col ">
+            <span class="input-group-text" id="addon-wrapping">@</span>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Mail"
+              aria-label="Mail"
+              aria-describedby="addon-wrapping"
+            />
+          </div>
+        </div>
 
-
-
-        </main>
+        <div id="coment" class="form-floating">
+          <textarea
+            class="form-control"
+            placeholder="Leave a comment here"
+            id="floatingTextarea2"
+            style="height: 150px"
+          ></textarea>
+          <label for="floatingTextarea2">Comments</label>
+        </div>
+      </div>
+    </section>
 
     <footer class="footer">
       <div class="footer_top">
         <div class="logo">
-          <img src="./img/LOGO blanco.png" alt="logo" width="250px" />
+          <img id="img-logo-footer" src="./img/LOGO blanco.png" alt="logo" />
         </div>
-        <div class="suscripcion">
-          <h3>Suscribite y obtene un 10% de descuento en tu primera compra</h3>
+        <div id="text-mobile" class="suscripcion">
+          <h3 id="text-h3-mobile-footer">
+            Suscribite y obtene un 10% de descuento en tu primera compra
+          </h3>
           <br />
-          <h5>
+          <h5 id="text-h5-mobile-footer">
             Unite y aprovechá ofertas exclusivas, noticias al instante y mucho
             más...
           </h5>
           <br />
-          <form action="">
+          <form class="form-mail" action="">
             <input type="email" name="email" placeholder="Ingresá tu mail" />
           </form>
         </div>
       </div>
     </footer>
+
+    <!-- link btp -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
