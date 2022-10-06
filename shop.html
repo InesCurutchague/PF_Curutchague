@@ -18,6 +18,14 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
       rel="stylesheet"
     />
+    <!-- link css btp -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+
     <link rel="shortcut icon" href="./img/logo pagina curvado.png" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Aune | handmade</title>
@@ -28,53 +36,277 @@
       <div class="logowpp">
         <img src="./img/logowpp.png" alt="whatsapp" width="40" height="40" />
       </div>
-      <h1 class="main_header_titulo">AUNE</h1>
       <!-- Inicio barra de navegacion -->
-      <nav>
-        <ul class="main_header_nav">
-          <li>
-            <a href="./index2.html">HOME</a>
-          </li>
-          <li>
-            <a href="./shop.html">SHOP</a>
-            <ul>
-              <li><a href="#">Caravanas</a></li>
-              <li><a href="#">Collares</a></li>
-              <li><a href="#">Anillos</a></li>
-              <li><a href="#">Sale</a></li>
+      <nav class="navbar fixed-top navbar-expand-md">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">AUNE</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul
+              class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll"
+              style="--bs-scroll-height: 100px"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index2.html"
+                  >HOME</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="./shop.html"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  SHOP
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Caravanas</a></li>
+                  <li><a class="dropdown-item" href="#">Collares</a></li>
+                  <li><a class="dropdown-item" href="#">Anillos</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">SALE</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./disenar.html"
+                  >DISEÑA TU ACCESORIO</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./contacto.html"
+                  >CONTACTO</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./login.html"
+                  >LOG IN</a
+                >
+              </li>
             </ul>
-          </li>
-          <li id="disenar"><a href="./disenar.html">DISEÑA TU ACCESORIO</a></li>
-          <li><a href="./contacto.html#formulario">CONTACTO</a></li>
-          <li><a href="./login.html">LOG IN</a></li>
-        </ul>
+          </div>
+        </div>
       </nav>
+
       <!-- Fin barra de navegacion -->
     </header>
-    <!-- Inicio contenido principal -->
+    <!-- Inicio de main principal -->
     <main class="main_principal_shop">
-
-
-
+      <section class="main_nav_izquierdo">
+        <div class="buscador_shop">
+          <h5>Buscar...</h5>
+          <nav class="navbar light">
+            <div class="container-fluid">
+              <form class="d-flex buscador" role="search">
+                <input
+                  class="form-control"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-dark boton_search btn-sm" type="submit">
+                  <img src="./img/search.svg" alt="search">
+                </button>
+              </form>
+            </div>
+          </nav>
+          <hr>
+        </div>
+        <div class="list_nav">
+          <a href="#">CARAVANAS</a>
+          <a href="#">PULSERAS</a>
+          <a href="#">COLLARES</a>
+          <a href="#">ANILLOS</a>
+          <a href="#">LLAVEROS</a>
+          <a href="#">SALE</a>
+        </div>
+      </section>
+      <section class="main_principal_shop_contenido">
+        <div class="card" style="width: 18rem">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </section>
     </main>
+
     <footer class="footer">
       <div class="footer_top">
         <div class="logo">
-          <img src="./img/logo_blanco.png" alt="logo" width="250px" />
+          <img id="img-logo-footer" src="./img/logo_blanco.png" alt="logo" />
         </div>
-        <div class="suscripcion">
-          <h3>Suscribite y obtene un 10% de descuento en tu primera compra</h3>
+        <div id="text-mobile" class="suscripcion">
+          <h3 id="text-h3-mobile-footer">
+            Suscribite y obtene un 10% de descuento en tu primera compra
+          </h3>
           <br />
-          <h5>
+          <h5 id="text-h5-mobile-footer">
             Unite y aprovechá ofertas exclusivas, noticias al instante y mucho
             más...
           </h5>
           <br />
-          <form action="">
+          <form class="form-mail" action="">
             <input type="email" name="email" placeholder="Ingresá tu mail" />
           </form>
         </div>
       </div>
     </footer>
+
+    <!-- link btp -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

@@ -176,14 +176,11 @@
       <div class="color">
         <h4>2°</h4>
         <h5>Envianos el o los colores que quieras para tu accesorio</h5>
-        <form action="">
-          <input
-            type="archivos"
-            name="archivos"
-            placeholder="Adjuntar archivos"
-            disabled
-          />
-        </form>
+        <div class="mb-3 btn_archivos">
+          <label for="formFile" class="form-label"></label>
+          <input class="form-control btn_archivos" type="file" id="formFile">
+        </div>
+
       </div>
       <div class="modelo">
         <h4>3°</h4>
@@ -283,6 +280,10 @@
             style="height: 150px"
           ></textarea>
           <label for="floatingTextarea2">Comments</label>
+        </div>
+
+        <div>
+          <button class="btn-formulario">Enviar formulario</button>
         </div>
       </div>
     </section>
