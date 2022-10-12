@@ -18,6 +18,14 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
       rel="stylesheet"
     />
+    <!-- link css btp -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+
     <link rel="shortcut icon" href="./img/logo pagina curvado.png" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Aune | handmade</title>
@@ -28,27 +36,81 @@
       <div class="logowpp">
         <img src="./img/logowpp.png" alt="whatsapp" width="40" height="40" />
       </div>
-      <h1 class="main_header_titulo">AUNE</h1>
       <!-- Inicio barra de navegacion -->
-      <nav>
-        <ul class="main_header_nav">
-          <li>
-            <a href="./index2.html">HOME</a>
-          </li>
-          <li>
-            <a href="./shop.html">SHOP</a>
-            <ul>
-              <li><a href="#">Caravanas</a></li>
-              <li><a href="#">Collares</a></li>
-              <li><a href="#">Anillos</a></li>
-              <li><a href="#">Sale</a></li>
+      <nav class="navbar fixed-top navbar-expand-md">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">AUNE</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul
+              class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll"
+              style="--bs-scroll-height: 100px"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.html"
+                  >HOME</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="./shop.html"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  SHOP
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Caravanas</a></li>
+                  <li><a class="dropdown-item" href="#">Collares</a></li>
+                  <li><a class="dropdown-item" href="#">Anillos</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">SALE</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./disenar.html"
+                  >DISEÑA TU ACCESORIO</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./contacto.html"
+                  >CONTACTO</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./login.html"
+                  >LOG IN</a
+                >
+              </li>
             </ul>
-          </li>
-          <li id="disenar"><a href="./disenar.html">DISEÑA TU ACCESORIO</a></li>
-          <li><a href="./contacto.html#formulario">CONTACTO</a></li>
-          <li><a href="./login.html">LOG IN</a></li>
-        </ul>
+          </div>
+        </div>
       </nav>
+    </header>
       <!-- Fin barra de navegacion -->
     </header>
     <!-- Inicio contenido principal -->

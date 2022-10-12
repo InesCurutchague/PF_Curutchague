@@ -1,0 +1,44 @@
+.main_principal_shop {
+    display: grid;
+    grid-template-areas: "navizq contenido";
+    grid-template-rows: 900px;
+    grid-template-columns: 25% auto;
+    width: 100%;
+    padding-top: 80px;
+  }
+  
+  .buscador_shop h5 {
+    font-size: medium;
+  }
+  
+  .main_nav_izquierdo {
+    grid-area: navizq;
+    display: grid;
+    grid-template-areas:
+      "search"
+      "list";
+    grid-template-rows: 100px 50px auto;
+    padding: 20px;
+    font-size: small;
+  }
+  
+  .buscador_shop_hr {
+    height: 2px;
+  }
+  
+  .boton_search {
+    border-radius: 10px;
+    border: 1px solid;
+    border-radius: 30px;
+    margin-right: 10px;
+    font-size: small;
+  }
+  
+  .list_nav {
+    grid-area: list;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 20px;
+    height: 200px;
+  }
