@@ -8968,6 +8968,66 @@ nav {
   .numeros_pag {
     display: none; } }
 
+.main_principal_login {
+  background: #e48d5f;
+  background: radial-gradient(circle, rgba(228, 141, 95, 0.88) 0%, rgba(204, 148, 136, 0.880456) 54%, rgba(205, 148, 159, 0.88) 100%);
+  max-width: 300px;
+  margin: auto;
+  padding: 5px 35px;
+  margin-top: 100px;
+  margin-top: 100px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  border-radius: 15px; }
+
+.form_title {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center; }
+
+.form_label {
+  margin-bottom: 10px;
+  margin-top: 8px; }
+
+.btn_submit {
+  text-align: center;
+  align-items: center; }
+
+.main_principal_login_form .form,
+#pwd,
+#email {
+  background-color: #dfc3c3;
+  padding: 8px; }
+
+.main_principal_login_form .form,
+#pwd,
+#email:hover {
+  border-color: aliceblue !important; }
+
+#exampleCheck1:checked {
+  background-color: #dfc3c3;
+  border-color: aliceblue; }
+
+#exampleCheck1 {
+  margin-top: 30px; }
+
+#form_check {
+  margin-top: 28px;
+  font-size: small; }
+
+.btn_submit {
+  width: 100%;
+  margin-top: 10px;
+  background-color: transparent;
+  border-color: #dfc3c3; }
+
+.btn_submit:hover {
+  background-color: #dfc3c3 !important;
+  border-color: #dfc3c3 !important; }
+
+@media screen and (min-width: 780px) {
+  .main_principal_login {
+    max-width: 650px; } }
+
 .main_principal_contacto {
   display: flex;
   margin-top: 50px;
@@ -8975,16 +9035,18 @@ nav {
 
 .main_principal_contacto_title {
   height: 200px;
-  width: 100vw;
-  background-image: url(..//img/logo_color.png);
+  width: 100%;
+  color: #d7b7ab;
+  background-image: url(..//img/img_contacto.jpg);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 130px; }
+  background-size: cover; }
   .main_principal_contacto_title h2, .main_principal_contacto_title .h2 {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    font-size: larger;
+    font-family: 'Fuzzy Bubbles', cursive;
+    text-shadow: 18px 13px 7px #41312b;
+    font-size: 50px;
     text-align: center;
-    padding-top: 100px; }
+    padding-top: 60px; }
 
 .formulario_contacto {
   padding-top: 10%;
@@ -8993,7 +9055,7 @@ nav {
   display: grid;
   grid-template-areas: "form" "info";
   grid-template-columns: 90%;
-  grid-template-rows: 400px 300px; }
+  grid-template-rows: 400px 200px; }
 
 .info_contacto {
   grid-area: info;
@@ -9044,38 +9106,18 @@ nav {
 .boton_form {
   margin-right: 10px; }
 
-.footer_contacto {
-  background-color: rgba(179, 160, 133, 0.372);
-  height: 200px;
-  width: 100%; }
-  .footer_contacto_top {
-    display: grid;
-    grid-template-areas: "logo susc redes";
-    grid-template-rows: 180px;
-    grid-template-columns: 20% 60%;
-    gap: 10px 50px; }
-
-.footer_contacto_logo img {
-  grid-area: logo;
-  width: 150px;
-  padding: 20px; }
-
-.suscripcion h3, .suscripcion .h3 {
-  font-size: x-small; }
-
-.suscripcion h5, .suscripcion .h5 {
-  font-size: xx-small; }
-
 @media screen and (min-width: 780px) {
   .main_principal_contacto_title {
     height: 400px;
-    background-size: 250px;
-    padding-top: 100px; }
+    padding-top: 100px;
+    text-shadow: 18px 13px 7px #41312b; }
+    .main_principal_contacto_title h2, .main_principal_contacto_title .h2 {
+      font-size: 100px; }
   .formulario_contacto {
     display: grid;
     grid-template-areas: "contact infor";
     grid-template-columns: 70% 30%;
-    grid-template-rows: 700px; }
+    grid-template-rows: 500px; }
   #id_formulario_contacto {
     grid-area: contact;
     font-size: medium;
@@ -9096,29 +9138,4 @@ nav {
     font-size: small; }
   .info_contacto {
     grid-area: infor;
-    font-size: small; }
-  .info_contacto h5, .info_contacto .h5 {
-    font-size: small; }
-  .info_contacto h4, .info_contacto .h4 {
-    font-size: medium; }
-  .footer_contacto {
-    background-color: rgba(179, 160, 133, 0.372);
-    height: 400px;
-    width: 100%; }
-    .footer_contacto_top {
-      display: grid;
-      grid-template-areas: "logo susc redes";
-      grid-template-rows: 380px;
-      grid-template-columns: 30% 70%;
-      gap: 10px 50px;
-      padding-left: 20px; }
-  .footer_contacto_logo img {
-    grid-area: logo;
-    width: 350px;
-    padding: 50px;
-    padding-bottom: 0%;
-    padding-top: 20px; }
-  .suscripcion h3, .suscripcion .h3 {
-    font-size: medium; }
-  .suscripcion h5, .suscripcion .h5 {
-    font-size: medium; } }
+    font-size: small; } }
