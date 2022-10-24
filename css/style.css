@@ -8473,6 +8473,9 @@ textarea.form-control-lg {
   bottom: 20px;
   right: 20px;
   z-index: 5; }
+  .logowpp img {
+    width: 40px;
+    height: 40px; }
 
 nav {
   background-color: white;
@@ -9032,21 +9035,20 @@ nav {
   display: flex;
   margin-top: 50px;
   flex-direction: column; }
-
-.main_principal_contacto_title {
-  height: 200px;
-  width: 100%;
-  color: #d7b7ab;
-  background-image: url(..//img/img_contacto.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover; }
-  .main_principal_contacto_title h2, .main_principal_contacto_title .h2 {
-    font-family: 'Fuzzy Bubbles', cursive;
-    text-shadow: 18px 13px 7px #41312b;
-    font-size: 50px;
-    text-align: center;
-    padding-top: 60px; }
+  .main_principal_contacto_title {
+    height: 200px;
+    width: 100%;
+    color: #d7b7ab;
+    background-image: url(..//img/img_contacto.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
+    .main_principal_contacto_title h2, .main_principal_contacto_title .h2 {
+      font-family: 'Fuzzy Bubbles', cursive;
+      text-shadow: 18px 13px 7px #41312b;
+      font-size: 50px;
+      text-align: center;
+      padding-top: 60px; }
 
 .formulario_contacto {
   padding-top: 10%;
@@ -9056,6 +9058,13 @@ nav {
   grid-template-areas: "form" "info";
   grid-template-columns: 90%;
   grid-template-rows: 400px 200px; }
+  .formulario_contacto_nombre {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between; }
+  .formulario_contacto_botones {
+    text-align: center; }
 
 .info_contacto {
   grid-area: info;
@@ -9093,15 +9102,6 @@ nav {
 .form-control {
   padding: 5px;
   font-size: xx-small; }
-
-.formulario_contacto_nombre {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  justify-content: space-between; }
-
-.formulario_contacto_botones {
-  text-align: center; }
 
 .boton_form {
   margin-right: 10px; }
