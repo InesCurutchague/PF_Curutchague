@@ -8830,19 +8830,21 @@ nav {
   font-family: 'Marcellus', serif; }
   .bienvenida_shop h1, .bienvenida_shop .h1 {
     text-shadow: 18px 13px 7px #41312b;
-    color: #3b2210;
-    padding-top: 180px;
+    color: #795538;
+    color: linear-gradient(90deg, #795538 0%, #d7a983 93%);
+    padding-top: 150px;
     width: 300px;
     text-align: center;
     padding-left: 80px;
-    font-size: 20px; }
+    font-size: 25px;
+    margin-right: 0px; }
 
 .main_principal_shop {
   display: grid;
   grid-template-areas: "navizq contenido";
-  grid-template-rows: 1000px;
+  grid-template-rows: 100%;
   grid-template-columns: 30% auto;
-  width: 100%;
+  width: 95%;
   padding-top: 40px; }
 
 .main_principal_shop a {
